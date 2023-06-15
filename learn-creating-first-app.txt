@@ -1,0 +1,41 @@
+Create Virtual environment
+    1- create directory
+    2- python3 -m venv env
+    3- source env/bin/activate
+Create one app to my project ---> Exp: home
+    1- python manage.py startapp home
+    2- initialize apps: insert to setting.py in 'INSTALLED_APPS = [...' 'home' directory
+        INSTALLED_APPS = [
+            'django.contrib.admin',
+            'django.contrib.auth',
+            'django.contrib.contenttypes',
+            'django.contrib.sessions',
+            'django.contrib.messages',
+            'django.contrib.staticfiles',
+            'home',
+        ]
+
+
+    3- Create 'urls.py' file in 'home' directory:
+    4- insert below codes in 'urls.py':
+        from django.urls import path
+        from . import views
+
+        urlpatterns = [path('hello/', views.say_hello),]
+
+
+    5- Insert below codes in 'views.py' in 'home' directory:
+        from django.shortcuts import render
+        from django.http import HttpResponse
+
+        def say_hello(request):
+            return HttpResponse('Hello World')
+
+    6- Add below codes in 'urls.py' in firstapp directory:
+        from django.contrib import admin
+        from django.urls import path, include
+
+        urlpatterns = [path('admin/', admin.site.urls), path('harchi/', include('home.urls'))]
+
+    7- Insert url in browser: http://127.0.0.1:8000/harchi/hello
+        show in html page in browser ---> Hello World
