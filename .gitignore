@@ -1,1 +1,3 @@
 firstapp/firstapp/__pycache__/
+firstapp/db.sqlite3
+env/
