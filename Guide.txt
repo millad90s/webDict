@@ -1,2 +1,8 @@
-Type below link in my browser:
-http://127.0.0.1:8000/harchi/hello
+Guide:
+
+To print hello World django:
+    http://127.0.0.1:8000/hi/hello/
+To get browser information:
+    http://127.0.0.1:8000/hi/info/
+To login to the admin panel:
+    http://127.0.0.1:8000/hi/admin/
