@@ -1,10 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <title>List All Theories</title>
+    <style>
+        html, body {
+            direction: rtl;
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
-$END$
+    <h1>لیست تیوری ها</h1>
+    <ul>
+        <ol>
+            {% for item in all_theory %}
+            <li>{{ item }}</li>
+            {% endfor %}
+        </ol>
+    </ul>
 </body>
 </html>
