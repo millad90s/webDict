@@ -1,8 +1,5 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-import requests
-import ipstack
-from ipstack import GeoLookup
 from ip3country import CountryLookup
 
 
