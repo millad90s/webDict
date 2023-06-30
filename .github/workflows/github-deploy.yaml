@@ -25,4 +25,5 @@ jobs:
             cd webDict
             docker build . -t web-dict
             docker stop webdict
+            docker rm webdict
             docker run -ti -d --name webdict -p 80:8080 web-dict
