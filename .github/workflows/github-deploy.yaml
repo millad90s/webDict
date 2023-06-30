@@ -3,7 +3,7 @@ run-name: ${{ github.actor }} let's deploy on server
 on: [ push]
 jobs:
   Deploy-on-ec2:
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-18.04
     name: Deploy
     steps:
       - name: deploy to ec2 instance
