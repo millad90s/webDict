@@ -6,6 +6,8 @@ jobs:
     runs-on: ubuntu-22.04
     name: Deploy
     steps:
+      - name: Checkout
+        uses: actions/checkout@v2
       - name: deploy to ec2 instance
         uses: appleboy/ssh-action@v0.1.10
         with:
