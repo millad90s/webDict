@@ -10,7 +10,7 @@ jobs:
         with:
           host: 34.244.85.128
           username: ec2-user
-          key: ${{ EC2_PUB_KEY }}
+          key: ${{ secrets.EC2_PUB_KEY }}
           port: 22
           script: |
             cd webDict
