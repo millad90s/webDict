@@ -17,10 +17,13 @@ jobs:
           port: 22
           debug: true
           script: |
-            ls -la 
-            pwd
+            if [ ! -d "webDict" ]; then
+              echo "Directory $directory does not exist."
+              git pull https://github.com/millad90s/webDict.git
+            else
+              echo "Directory webDict exists."
+            fi
             cd webDict
-            ls -la
-            git pull origin master
             docker build . -t web-dict
+            docker run -ti -d -p 80:8080 web-dict
             docker run -ti -d -p 80:8080 web-dict
