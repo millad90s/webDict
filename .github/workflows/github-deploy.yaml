@@ -1,0 +1,19 @@
+name: github Deploy
+run-name: ${{ github.actor }} let's deploy on server
+on: [ push]
+jobs:
+  Deploy-on-ec2:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: deploy to ec2 instance
+        uses: appleboy/ssh-action@master
+        with:
+          host: 34.244.85.128
+          username: ec2-user
+          key: ${{ EC2_PUB_KEY }}
+          port: 22
+          script: |
+            cd webDict
+            git pull origin master
+            git status
+            ls -la
