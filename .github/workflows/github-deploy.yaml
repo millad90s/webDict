@@ -17,6 +17,8 @@ jobs:
           port: 22
           debug: true
           script: |
+            ls -la 
+            pwd
             cd webDict
             ls -la
             git pull origin master
