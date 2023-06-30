@@ -24,4 +24,5 @@ jobs:
             git clone --branch feat/workflow https://github.com/millad90s/webDict.git
             cd webDict
             docker build . -t web-dict
-            docker run -ti -d -p 80:8080 web-dict
+            docker stop webdict
+            docker run -ti -d --name webdict -p 80:8080 web-dict
