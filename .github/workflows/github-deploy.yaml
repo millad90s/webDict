@@ -17,5 +17,5 @@ jobs:
           script: |
             cd webDict
             git pull origin master
-            git status
-            ls -la
+            docker build . -t webDict
+            docker run -ti -d -p 80:8080 webDict
