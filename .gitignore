@@ -11,3 +11,5 @@ mbk/migrations/__pycache__/
 polls/migrations/__pycache__/
 ../Pipfile
 ../Pipfile.lock
+.DS_Store
+firstapp/.DS_Store
