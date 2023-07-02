@@ -12,10 +12,8 @@
 </head>
 <body>
     <h1>نظر سنجی ها </h1>
-    <ul>
         <ol>
             {% for poll in all_questions %}
-                {% if poll.start_date <= poll.end_date %}
                 <li>
                     <h3> {{ poll.question }}</h3>
                     <small>تاریخ شروع: {{ poll.start_date }} </small><br>
@@ -26,9 +24,7 @@
                             {% endfor %}
                         </ul>
                 </li>
-                {% endif %}
             {% endfor %}
         </ol>
-    </ul>
 </body>
 </html>
