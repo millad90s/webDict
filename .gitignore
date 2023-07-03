@@ -2,7 +2,16 @@ firstapp/firstapp/__pycache__/
 firstapp/db.sqlite3
 firstapp/home/__pycache__/
 firstapp/mbk/__pycache__/
+firstapp/polls/__pycache__/
 firstapp/home/migrations/__pycache__/
 env/
 venv/
+firstapp/env
 .idea/
+firstapp/mbk/migrations/__pycache__/
+firstapp/polls/migrations/__pycache__/
+Pipfile
+Pipfile.lock
+.DS_Store
+firstapp/.DS_Store
+
