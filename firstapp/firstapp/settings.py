@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+from socket import gethostname, gethostbyname
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,9 +25,9 @@ SECRET_KEY = 'django-insecure-6z+8t6ko+-k2%rfjb*z)k^q#hi-kwq0u3&yeru05-j&!%d=smf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [gethostname(), gethostbyname(gethostname())]
 
-
+STATIC_ROOT = 'static/'
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +39,8 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'home',
     'mbk',
+    'adminlte3',
+    'adminlte3_theme'
 ]
 
 MIDDLEWARE = [

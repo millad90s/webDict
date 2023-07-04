@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>IP and Country</title>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block content %}
     <div>
         <p>Your browser version is : {{ browser_name }}</p>
         <p>Your ip address is : {{ user_ip }}</p>
         <p>Your Country is : {{ country_code }}</p>
     </div>
-</body>
-</html>
+{% endblock %}
