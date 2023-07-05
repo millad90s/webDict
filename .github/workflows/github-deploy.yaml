@@ -26,4 +26,4 @@ jobs:
             docker build . -t web-dict
             docker stop webdict
             docker rm webdict
-            docker run -ti -d --name webdict -p 8080:8080 web-dict
+            docker run -ti -d --name webdict -p 80:8080 web-dict
