@@ -1,9 +1,16 @@
 firstapp/firstapp/__pycache__/
 firstapp/home/__pycache__/
 firstapp/mbk/__pycache__/
+firstapp/polls/__pycache__/
 firstapp/home/migrations/__pycache__/
 firstapp/.DS_Store
 env/
 venv/
+firstapp/env
 .idea/
 .DS_Store
+firstapp/mbk/migrations/__pycache__/
+firstapp/polls/migrations/__pycache__/
+Pipfile
+Pipfile.lock
+firstapp/.DS_Store
