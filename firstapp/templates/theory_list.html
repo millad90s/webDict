@@ -1,22 +1,19 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <title>List All Theories</title>
-    <style>
-        html, body {
-            direction: rtl;
-            text-align: right;
-        }
-    </style>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %} Theory {% endblock %}
+
+{% block content %}
+
     <h1>لیست تیوری ها</h1>
     <ul>
         <ol>
             {% for item in all_theory %}
-            <li>{{ item }}</li>
+                <li>
+                    <h3><a href="mbkdetail/{{ item.id }}"> {{ item.description }} </a></h3>
+                </li>
             {% endfor %}
         </ol>
     </ul>
-</body>
-</html>
+
+{% endblock %}
+

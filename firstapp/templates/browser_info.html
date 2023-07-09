@@ -1,14 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>IP and Country</title>
-</head>
-<body>
-    <div>
-        <p>Your browser version is : {{ browser_name }}</p>
-        <p>Your ip address is : {{ user_ip }}</p>
-        <p>Your Country is : {{ country_code }}</p>
-    </div>
-</body>
-</html>
+{% extends 'base.html' %}
+
+{% block content %}
+
+        <p>نسخه های مرورگر شما :<br> {{ browser_name }}</p>
+        <p>آدرس آی پی شما : {{ user_ip }}</p>
+        <p>کشور شما : {{ country_code }}</p>
+
+{% endblock %}
+
