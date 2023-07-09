@@ -47,6 +47,9 @@
       .width-200{
         width: 200px;
       }
+      .blockEl{
+        display: block;
+      }
     </style>
   </head>
   <body class="ps-5 hold-transition sidebar-mini layout-fixed">
@@ -104,7 +107,7 @@
     </nav>
       <section>
         <div class="wrapper">
-          <aside class="sidebar rightfloat width-200 sidebar-dark-primary ms-5 pt-4 elevation-4">
+          <aside class="sidebar rightfloat width-200 sidebar-dark-primary ms-5 pt-4 elevation-4 d-md-block d-none ">
             <nav class="mt-2">
               <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
                 <li class="nav-item menu-open">
@@ -135,41 +138,41 @@
             </nav> 
           </aside>
         </div>
-        <div class="pt-5">
+        <div class="pt-5 me-5">
           <div class="question-answers">
             <div class="leftfloat">
               <img class="question-images d-lg-block d-none" src="images/2nd-question.avif" alt="image for first question">
             </div>
             <div class="rightfloat">
-              <p class="lead fw-bold">question 1</p>
+              <p class="lead fw-bold persian-p">چه رنگی را دوست دارید؟</p>
               <form action="#" method="post">
                 <div>
-                  <label class="form-check-label leftfloat mb-3 mx-2" for="Question1Option1">
-                    1st option
+                  <label class="form-check-label mb-3 persian-p" for="Question1Option1">
+                    قرمز
                   </label>
                   <div class="form-check rightfloat mb-3">
                     <input class="form-check-input bg-secondary" type="radio" name="Question1" id="Question1Option1" checked>
                   </div>
                 </div>
                 <div>
-                  <label class="form-check-label leftfloat mb-3 mx-2" for="Question1Option2">
-                    2nd option
+                  <label class="form-check-label mb-3 persian-p" for="Question1Option2">
+                    آبی
                   </label>
                   <div class="form-check rightfloat mb-3">
                     <input class="form-check-input bg-secondary" type="radio" name="Question1" id="Question1Option2">
                   </div>
                 </div>
                 <div>
-                  <label class="form-check-label leftfloat mb-3 mx-2" for="Question1Option3">
-                    3rd option
+                  <label class="form-check-label mb-3 persian-p" for="Question1Option3">
+                    سیاه
                   </label>
                   <div class="form-check rightfloat mb-3">
                     <input class="form-check-input bg-secondary" type="radio" name="Question1" id="Question1Option3">
                   </div>
                 </div>
                 <div>
-                  <label class="form-check-label leftfloat mb-3 mx-2" for="Question1Option4">
-                    4th option
+                  <label class="form-check-label mb-3 persian-p" for="Question1Option4">
+                    زرد
                   </label>
                   <div class="form-check rightfloat mb-3">
                     <input class="form-check-input bg-secondary" type="radio" name="Question1" id="Question1Option4">
@@ -183,39 +186,41 @@
               <img class="question-images d-lg-block d-none" src="images/1st-question.webp" alt="image for first question">
             </div>
             <div class="rightfloat">
-              <p class="lead fw-bold">question 2</p>
-              <div>
-                <label class="form-check-label leftfloat mb-3 mx-2" for="Question2Option1">
-                  1st option
-                </label>
-                <div class="form-check rightfloat mb-3">
-                  <input class="form-check-input bg-secondary" type="radio" name="Question2" id="Question2Option1" checked>
+              <p class="lead fw-bold persian-p">چه روزی را دوست دارید؟</p>
+              <form action="#" method="post">
+                <div>
+                  <label class="form-check-label persian-p mb-3 mx-2" for="Question2Option1">
+                    شنبه
+                  </label>
+                  <div class="form-check rightfloat mb-3">
+                    <input class="form-check-input bg-secondary" type="radio" name="Question2" id="Question2Option1" checked>
+                  </div>
                 </div>
-              </div>
-              <div>
-                <label class="form-check-label leftfloat mb-3 mx-1" for="Question2Option2">
-                  2nd option
-                </label>
-                <div class="form-check rightfloat mb-3">
-                  <input class="form-check-input bg-secondary" type="radio" name="Question2" id="Question2Option2">
+                <div>
+                  <label class="form-check-label persian-p mb-3 mx-1" for="Question2Option2">
+                    یک شنبه
+                  </label>
+                  <div class="form-check rightfloat mb-3">
+                    <input class="form-check-input bg-secondary" type="radio" name="Question2" id="Question2Option2">
+                  </div>
                 </div>
-              </div>
-              <div>
-                <label class="form-check-label leftfloat mb-3 mx-2" for="Question2Option3">
-                  3rd option
-                </label>
-                <div class="form-check rightfloat mb-3">
-                  <input class="form-check-input bg-secondary" type="radio" name="Question2" id="Question2Option3">
+                <div>
+                  <label class="form-check-label persian-p mb-3 mx-2" for="Question2Option3">
+                    پنج شنبه
+                  </label>
+                  <div class="form-check rightfloat mb-3">
+                    <input class="form-check-input bg-secondary" type="radio" name="Question2" id="Question2Option3">
+                  </div>
                 </div>
-              </div>
-              <div>
-                <label class="form-check-label leftfloat mb-3 mx-2" for="Question2Option4">
-                  4th option
-                </label>
-                <div class="form-check rightfloat mb-3">
-                  <input class="form-check-input bg-secondary" type="radio" name="Question2" id="Question2Option4">
+                <div>
+                  <label class="form-check-label persian-p mb-3 mx-2" for="Question2Option4">
+                    جمعه
+                  </label>
+                  <div class="form-check rightfloat mb-3">
+                    <input class="form-check-input bg-secondary" type="radio" name="Question2" id="Question2Option4">
+                  </div>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
           <div class="rightfloat">
