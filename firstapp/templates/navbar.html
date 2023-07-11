@@ -1,5 +1,55 @@
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="/home">خانه</a>
+<!--navbar-->
+<nav class="navbar navbar-expand-lg bg-dark fixed-top elevation-4">
+  <div class="container-fluid text-center px-4">
+    <div class=>
+      <img src="/frontend/images/mbk-logo.svg" />
+
+
+      <script>
+        var currentDate = new Date();
+        var month = currentDate.getMonth();
+        var day = currentDate.getDate();
+        var year = currentDate.getFullYear();
+        var fullDate = month + "/" + day + "/" + year;
+        document.write(fullDate);
+      </script>
+    </div>
+    <div class=>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="logo">&#8801;</span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="btn btn-secondary btn-lg ms-3 rounded-pill" href="/home"
+              >خانه</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="btn btn-secondary btn-lg ms-3 rounded-pill" href=""
+              >link to second site</a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a class="btn btn-secondary btn-lg ms-3 rounded-pill" href=""
+              >link to third site</a
+            >
+          </li>
+          <li>
+            <a class="btn btn-secondary btn-lg ms-3 rounded-pill" href=""
+              >link to fourth site</a
+            >
+          </li>
+        </ul>
       </div>
-    </nav>
+    </div>
+  </div>
+</nav>

@@ -2,14 +2,27 @@
 
 {% block content %}
 
-  <h2> {{ question_select.question }} </h2>
-  <h6> {{ question_select.start_date }} </h6>
-  <h6> {{ question_select.end_date }} </h6>
+  <h2 class="display-6 persian-p"> {{ question_select.question }} </h2>
+  <h6 class="lead"> {{ question_select.start_date }} </h6>
+  <h6 class="lead"> {{ question_select.end_date }} </h6>
 
-      <ul>
-          {% for item in question_select.option_set.all %}
-          <li> {{ item.option }}</li>
-          {% endfor %}
-      </ul>
+  <form action="" method="post">
+      {% for item in question_select.option_set.all %}
+       <div>
+            <div class="form-check rightfloat mb-3 mx-2">
+              <input class="form-check-input bg-secondary" type="radio" name="{{poll.question}}" id="{{item.option}}">
+            </div>
+            <label class="form-check-label mb-3 persian-p rightfloat" for="{{item.option}}">
+              {{ item.option }}
+            </label>
+            <div class="clear"></div>
+      </div>
+      {% endfor %}
+  </form>
 
+  <div class="rightfloat">
+    <button type="submit" class="btn btn-outline-secondary btn-lg">
+      submit
+    </button>
+  </div>
 {% endblock %}

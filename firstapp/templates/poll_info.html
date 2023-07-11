@@ -4,11 +4,11 @@
 
 {% block content %}
 
-    <h1>نظر سنجی ها </h1>
-        <ol>
+    <h1 class="display-6">نظر سنجی ها </h1>
+        <ol class="pt-5 me-5">
             {% for poll in all_questions %}
                 <li>
-                    <h3><a href="polldetail/{{ poll.id }}"> {{ poll.question }} </a></h3>
+                    <h3><a href="polldetail/{{ poll.id }}" class="lead fw-bold persian-p"> {{ poll.question }} </a></h3>
                 </li>
             {% endfor %}
         </ol>
