@@ -1,6 +1,13 @@
 body{
   padding-top: 70px;
 }
+.bg-design{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -100;
+}
 nav{
   height: 70PX;
 }
@@ -20,6 +27,12 @@ nav{
 }
 .question-answers{
   height: 250px;
+}
+.border-design{
+  border: 3px solid rgb(72, 218, 255);
+}
+.text-color{
+  color: rgb(155, 240, 255);
 }
 .persian-p{
   text-align:right;
