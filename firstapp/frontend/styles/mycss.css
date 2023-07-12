@@ -1,7 +1,5 @@
-body , html{
+body{
   padding-top: 70px;
-  direction: rtl:
-  text-align: right;
 }
 nav{
   height: 70PX;
