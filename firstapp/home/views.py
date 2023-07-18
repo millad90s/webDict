@@ -9,6 +9,10 @@ def say_hello(request):
     return HttpResponse('Hello World Django')
 
 
+def home(request):
+    return render(request, 'home.html', {'wellcome': 'حای سلام دوستان خوش آمدید '})
+
+
 def browser_info(request):
     user_agent = request.META.get('HTTP_USER_AGENT', '')
     return render(request, 'browser_info.html', {'browser_name': user_agent})
@@ -30,3 +34,8 @@ def show_info(request):
     }
 
     return render(request, 'browser_info.html', data)
+
+
+def detail_browser(request, browser_inf):
+    inf = show_info.objects.get(browser_inf)
+    return render(request, 'browser_detail.html', {'user_inf': inf})

@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.2/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.2/ref/settings/
 """
-
+import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-6z+8t6ko+-k2%rfjb*z)k^q#hi-kwq0u3&yeru05-j&!%d=smf
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['54.194.46.28','localhost','e2e.platform124.com']
+ALLOWED_HOSTS = ['54.194.46.28','localhost','e2e.platform124.com','127.0.0.1']
 
 
 # Application definition
@@ -120,7 +120,14 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
+# Add the following lines
+STATICFILES_DIRS = [
+    os.path.join(BASE_DIR, 'frontend', 'styles'),
+    os.path.join(BASE_DIR, 'frontend', 'images'),
+]
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+STATIC_ROOT = Path(BASE_DIR).joinpath('./static')
