@@ -11,6 +11,18 @@ body{
 nav{
   height: 70PX;
 }
+.nav-color{
+  background-color:rgb(29, 22, 43);
+}
+.sidebar-color{
+  background-color:rgba(76, 14, 88, 0.7);
+}
+.fixed-end{
+  position: fixed;
+  top: 70px;
+  right: 0px;
+  bottom: 0px;
+}
 .logo {
   height: 50px;
 }
@@ -26,7 +38,7 @@ nav{
   object-fit: cover;
 }
 .question-answers{
-  height: 250px;
+  height: 260px;
 }
 .border-design{
   border: 3px solid rgb(72, 218, 255);
@@ -46,4 +58,14 @@ nav{
 }
 .clear{
   clear: both;
+}
+@media (min-width: 768px){
+  .Body{
+    padding-right: 200px;
+  }
+}
+@media (max-width: 768px){
+  .Body{
+    padding-right: 20px;
+  }
 }

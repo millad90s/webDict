@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en" lang="fa">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>admin-panel</title>
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <link rel="stylesheet" href="styles/all.min.css">
+  <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+  <link rel="stylesheet" href="styles/adminlte.min.css">
+  <link rel="stylesheet" href="styles/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="styles/admin-panel.css">
+  </head>
+  <body class="layout-fixed">
+    <img class="bg-design d-lg-block d-none" src="images/background-lg.jpg" alt="background-image-lg">
+    <img class="bg-design d-md-block d-lg-none" src="images/background-md.jpeg" alt="background-image-md">
+    <nav class="navbar navbar-expand-lg nav-color fixed-top elevation-4">
+      <div class="container-fluid text-center px-4">
+        <div class="text-light">
+          <img src="images/mbk-logo.svg" class="logo ms-2 me-4 rounded-pill" alt="logo" />
+          <script>
+            var currentDate = new Date();
+            var month = currentDate.getMonth();
+            var day = currentDate.getDate();
+            var year = currentDate.getFullYear();
+            var fullDate = month + "/" + day + "/" + year;
+            document.write(fullDate);
+          </script>
+        </div>
+        <div class=>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="logo text-light">&#8801;</span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="shadow-lg btn btn-light btn-lg ms-3 rounded-pill fw-bold" href=""
+                  >link to first site</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="shadow-lg btn btn-light btn-lg ms-3 rounded-pill fw-bold" href=""
+                  >link to second site</a
+                >
+              </li>
+              <li class="nav-item dropdown">
+                <a class="shadow-lg btn btn-light btn-lg ms-3 rounded-pill fw-bold" href=""
+                  >link to third site</a
+                >
+              </li>
+              <li>
+                <a class="shadow-lg btn btn-light btn-lg ms-3 rounded-pill fw-bold" href="/home"
+                  >خانه</a
+                >
+              </li>
+            </ul>
+          </div>
+          <button class="btn btn-light fw-bold shadow-lg rounded-pill d-xs-block d-sm-block d-md-none rightfloat" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Dashboards</button>
+          <div class="offcanvas offcanvas-end d-xs-block d-sm-block d-md-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header nav-color">
+              <h5 class="offcanvas-title text-light" id="offcanvasRightLabel">Dashboards</h5>
+              <button type="button" class="btn-close btn-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body offcanvas-color">
+                <a href="/info" class="nav-link btn offcanvas-options rounded-pill">
+                  <p class="text-dark">اطلاعات سیستم</p>
+                </a>
+              <br>
+                <a href="/poll" class="nav-link btn offcanvas-options rounded-pill">
+                  <p class="text-dark">نظرسنجی ها</p>
+                </a>
+              <br>
+                <a href="/mbk" class="nav-link btn offcanvas-options rounded-pill">
+                  <p class="text-dark">سوترا ها</p>
+                </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <section class="ps-5">
+      <div class="wrapper">
+        <aside class="sidebar rightfloat width-200 sidebar-color ms-5 pt-4 elevation-4 d-md-block d-none fixed-end">
+          <nav class="mt-2">
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link active bg-light rounded-pill">
+                  <p class="english-p text-dark fw-bold">
+                      Dashboards
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item persian-p my-2">
+                    <a href="/info" class="nav-link">
+                      <p class="text-light">اطلاعات سیستم</p>
+                    </a>
+                  </li>
+                  <li class="nav-item persian-p my-2">
+                    <a href="/poll" class="nav-link">
+                      <p class="text-light">نظرسنجی ها</p>
+                    </a>
+                  </li>
+                  <li class="nav-item persian-p my-2">
+                    <a href="/mbk" class="nav-link">
+                      <p class="text-light">سوترا ها</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </nav> 
+        </aside>
+      </div>
+      <form class="Body" action="" method="post">
+        <div class="input-group input-group-lg mt-5 mb-2 rightfloat question-part">
+          <input type="text" class="form-control persian-p" required maxlength="100" placeholder="سوال نظرسنجی را وارد کنید" aria-describedby="question" name="question">
+          <div class="clear"></div>
+        </div>
+        <div class="input-group input-group-lg my-2 ms-5 rightfloat Option-part">
+          <input type="text" class="form-control persian-p" required maxlength="50" placeholder="گزینه را وارد کنید" aria-describedby="Options" name="Option2">
+          <div class="clear"></div>
+        </div>
+        <div class="input-group input-group-lg my-2 ms-5 rightfloat Option-part">
+          <input type="text" class="form-control persian-p" required maxlength="50" placeholder="گزینه را وارد کنید" aria-describedby="Options" name="Option2">
+          <div class="clear"></div>
+        </div>
+        <div class="input-group input-group-lg my-2 ms-5 rightfloat Option-part">
+          <input type="text" class="form-control persian-p" maxlength="50" placeholder="گزینه را وارد کنید" aria-describedby="Options" name="Option2">
+          <div class="clear"></div>
+        </div>
+        <div class="input-group input-group-lg my-2 ms-5 rightfloat Option-part">
+          <input type="text" class="form-control persian-p" maxlength="50" placeholder="گزینه را وارد کنید" aria-describedby="Options" name="Option2">
+          <div class="clear"></div>
+        </div>
+        <div class="input-group input-group-lg my-2 ms-5 rightfloat Option-part">
+          <input type="text" class="form-control persian-p" maxlength="50" placeholder="گزینه را وارد کنید" aria-describedby="Options" name="Option2">
+          <div class="clear"></div>
+        </div>
+        <div class="input-group input-group-lg my-2 rightfloat question-part">
+          <input type="file" class="form-control" id="Image-Input" name="Image-Input" aria-describedby="Image-Input" aria-label="Upload">
+          <span class="input-group-text persian-p" id="question">عکس وارد کنید</span>
+          <div class="clear"></div>
+        </div>
+        <div class="input-group input-group-lg my-2 ms-5 rightfloat question-part">
+          <input type="date" class="form-control" id="Image-Input" name="Image-Input" aria-describedby="Image-Input" aria-label="Upload">
+          <span class="input-group-text persian-p" id="question">شروع نظرسنجی</span>
+          <div class="clear"></div>
+        </div>
+        <div class="input-group input-group-lg my-2 ms-5 rightfloat question-part">
+          <input type="date" class="form-control" id="Image-Input" name="Image-Input" aria-describedby="Image-Input" aria-label="Upload">
+          <span class="input-group-text persian-p" id="question">پایان نظرسنجی</span>
+          <div class="clear"></div>
+        </div>
+        <div>
+          <button type="submit" class="btn btn-lg submit-color rightfloat my-2 width-200 sub">ساخت</button>
+        </div>
+      </form>
+    </section>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"
+  ></script>
+  </body>
+</html>
+  
