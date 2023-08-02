@@ -1,0 +1,144 @@
+body{
+  padding-top: 70px;
+}
+.bg-design{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  z-index: -100;
+}
+nav{
+  height: 70PX;
+}
+.nav-color{
+  background-color:rgb(29, 22, 43);
+}
+.sidebar-color{
+  background-color:rgba(76, 14, 88, 0.7);
+}
+.offcanvas-color{
+  background-color:rgb(43, 37, 82);
+}
+.offcanvas-options{
+  background-color: rgb(170, 255, 255);
+  transition: background-color 0.2s;
+}
+.offcanvas-options:hover{
+  background-color: rgb(81, 98, 255);
+}
+.submit-color{
+  background-color: rgb(0, 255, 255);
+  transition: background-color 0.2s;
+}
+.submit-color:hover{
+  background-color: rgb(123, 195, 255);
+}
+.plus-color{
+  background-color: rgb(0, 255, 255);
+  transition: background-color 0.2s;
+}
+.plus-color:hover{
+  background-color: rgb(123, 195, 255);
+}
+.fixed-end{
+  position: fixed;
+  top: 70px;
+  right: 0px;
+  bottom: 0px;
+}
+.logo {
+  height: 50px;
+}
+.rightfloat{
+  float: right;
+}
+.leftfloat{
+  float: left;
+}
+.clear{
+  clear: both;
+}
+.persian-p{
+  text-align:right;
+}
+.english-p{
+  text-align: left;
+}
+.width-200{
+  width: 200px;
+}
+@media (min-width: 1400px) {
+  .question-part{
+    width: 1050px;
+  }
+  .Option-part{
+    width: 800px;
+  }
+  .sub{
+    margin: 0 0 0 500px;
+  }
+  .Body{
+    padding-right: 250px;
+  }
+}
+@media (max-width: 1400px) and (min-width: 1200px){
+  .question-part{
+    width: 850px;
+  }
+  .Option-part{
+    width: 600px;
+  }
+  .sub{
+    margin: 0 0 0 300px;
+  }
+  .Body{
+    padding-right: 250px;
+  }
+}
+@media (max-width: 1200px) and (min-width: 992px){
+  .question-part{
+    width: 650px;
+  }
+  .Option-part{
+    width: 500px;
+  }
+  .sub{
+    margin: 0 0 0 500px;
+  }
+  .Body{
+    padding-right: 250px;
+  }
+}
+@media (max-width: 992px) and (min-width: 768px){
+  .question-part{
+    width: 450px;
+  }
+  .Option-part{
+    width: 350px;
+  }
+  .sub{
+    margin: 0 0 0 300px;
+  }
+  .Body{
+    padding-right: 250px;
+  }
+}
+@media (max-width: 768px){
+  .question-part{
+    padding: 0 30px 0 30px;
+  }
+  .Option-part{
+    padding: 0 30px 0 30px;
+  }
+  .sub{
+    margin: 0 30px 0 300px;
+  }
+  .plus{
+    margin-right: 30px;
+    float: right;
+  }
+  .Body{
+    padding-right: 20px;
+  }
+}

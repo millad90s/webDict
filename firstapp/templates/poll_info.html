@@ -1,30 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Poll</title>
-        <style>
-        html, body {
-            direction: rtl;
-            text-align: right;
-        }
-    </style>
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %} Poll {% endblock %}
+
+{% block content %}
+
     <h1>نظر سنجی ها </h1>
         <ol>
             {% for poll in all_questions %}
                 <li>
-                    <h3> {{ poll.question }}</h3>
-                    <small>تاریخ شروع: {{ poll.start_date }} </small><br>
-                    <small>تاریخ انقضا: {{ poll.end_date }} </small>
-                        <ul>
-                            {% for item in poll.option_set.all %}
-                            <li> {{ item.option }}</li>
-                            {% endfor %}
-                        </ul>
+                    <h3><a href="polldetail/{{ poll.id }}"> {{ poll.question }} </a></h3>
                 </li>
             {% endfor %}
         </ol>
-</body>
-</html>
+
+{% endblock %}
