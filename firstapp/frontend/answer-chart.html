@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>answer-chart</title>
+  <link
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+  rel="stylesheet"
+  integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+  crossorigin="anonymous">
+  <link rel="stylesheet" href="styles/OverlayScrollbars.min.css">
+  <link rel="stylesheet" href="styles/adminlte.min.css">
+  <link rel="stylesheet" href="styles/answer-chart.css">
+</head>
+<body class="layout-fixed">
+  <img class="bg-design d-lg-block d-none" src="images/background-lg.jpg" alt="background-image-lg">
+  <img class="bg-design d-md-block d-lg-none" src="images/background-md.jpeg" alt="background-image-md">
+  <nav class="navbar navbar-expand-lg nav-color fixed-top elevation-4">
+    <div class="container-fluid text-center px-4">
+      <div class="text-light">
+        <img src="images/mbk-logo.svg" class="logo ms-2 me-4 rounded-pill" alt="logo" />
+        <script>
+          var currentDate = new Date();
+          var month = currentDate.getMonth();
+          var day = currentDate.getDate();
+          var year = currentDate.getFullYear();
+          var fullDate = month + "/" + day + "/" + year;
+          document.write(fullDate);
+        </script>
+      </div>
+      <div class=>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="logo text-light">&#8801;</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="shadow-lg btn btn-light btn-lg ms-3 rounded-pill fw-bold" href=""
+                >link to first site</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="shadow-lg btn btn-light btn-lg ms-3 rounded-pill fw-bold" href=""
+                >link to second site</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a class="shadow-lg btn btn-light btn-lg ms-3 rounded-pill fw-bold" href=""
+                >link to third site</a
+              >
+            </li>
+            <li>
+              <a class="shadow-lg btn btn-light btn-lg ms-3 rounded-pill fw-bold" href="/home"
+                >خانه</a
+              >
+            </li>
+          </ul>
+        </div>
+        <button class="btn btn-light fw-bold shadow-lg rounded-pill d-xs-block d-sm-block d-md-none rightfloat" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Dashboards</button>
+        <div class="offcanvas offcanvas-end d-xs-block d-sm-block d-md-none" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+          <div class="offcanvas-header nav-color">
+            <h5 class="offcanvas-title text-light" id="offcanvasRightLabel">Dashboards</h5>
+            <button type="button" class="btn-close btn-light" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body offcanvas-color">
+              <a href="/info" class="nav-link btn offcanvas-options rounded-pill">
+                <p class="text-dark">اطلاعات سیستم</p>
+              </a>
+            <br>
+              <a href="/poll" class="nav-link btn offcanvas-options rounded-pill">
+                <p class="text-dark">نظرسنجی ها</p>
+              </a>
+            <br>
+              <a href="/mbk" class="nav-link btn offcanvas-options rounded-pill">
+                <p class="text-dark">سوترا ها</p>
+              </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <div class="wrapper">
+    <aside class="sidebar rightfloat width-200 sidebar-color ms-5 pt-4 elevation-4 d-md-block d-none fixed-end">
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-item menu-open">
+            <a href="#" class="nav-link active bg-light rounded-pill">
+              <p class="english-p text-dark fw-bold">
+                  Dashboards
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item persian-p my-2">
+                <a href="/info" class="nav-link">
+                  <p class="text-light">اطلاعات سیستم</p>
+                </a>
+              </li>
+              <li class="nav-item persian-p my-2">
+                <a href="/poll" class="nav-link">
+                  <p class="text-light">نظرسنجی ها</p>
+                </a>
+              </li>
+              <li class="nav-item persian-p my-2">
+                <a href="/mbk" class="nav-link">
+                  <p class="text-light">سوترا ها</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav> 
+    </aside>
+  </div>
+  <div id="bar-chart" class="chart"></div>
+  <script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+  crossorigin="anonymous"
+  ></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/jquery.flot.js"></script>
+  <script src="js/answers-chart.js"></script>
+</body>
+</html>

@@ -59,11 +59,6 @@ nav{
 .clear{
   clear: both;
 }
-.border-design{
-  border: 3px solid rgb(72, 218, 255);
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
 .persian-p{
   text-align:right;
 }
@@ -140,7 +135,8 @@ nav{
     margin: 0 30px 0 300px;
   }
   .plus{
-    margin: 0 30px 0 300px;
+    margin-right: 30px;
+    float: right;
   }
   .Body{
     padding-right: 20px;
